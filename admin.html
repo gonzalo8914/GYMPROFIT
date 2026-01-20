@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>GYMPROFIT | Administración</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>GYMPROFIT</h1>
+    <h2>Panel de Administración</h2>
+
+    <form id="claseForm">
+        <label>Nombre de la clase</label>
+        <input type="text" id="nombreClase" required>
+
+        <label>Horario</label>
+        <input type="text" id="horarioClase" required>
+
+        <label>Cupos</label>
+        <input type="number" id="cuposClase" required>
+
+        <button type="submit">Crear Clase</button>
+    </form>
+
+    <h3>Clases creadas</h3>
+    <ul id="listaClases"></ul>
+</div>
+
+<script src="js/auth.js"></script>
+<script src="js/clases.js"></script>
+</body>
+</html>

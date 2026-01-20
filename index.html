@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>GYMPROFIT | Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>GYMPROFIT</h1>
+        <h2>Ingreso al Sistema</h2>
+
+        <form id="loginForm">
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" required>
+
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" required>
+
+            <label for="rol">Rol</label>
+            <select id="rol">
+                <option value="admin">Administrador</option>
+                <option value="usuario">Usuario</option>
+            </select>
+
+            <button type="submit">Ingresar</button>
+        </form>
+
+        <p id="mensaje"></p>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
